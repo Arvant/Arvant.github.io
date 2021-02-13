@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="سلیمان ربیعی">
+
+
+    <meta name="subtitle" content="یک توسعه دهنده">
+
+
+    <meta name="description" content="علاقه مند به برنامه نویسی و توسعه اپلیکیشن های وب،موبایل و بازی">
+
+
+    <meta name="keywords" content="-php -C++ -Java -python -cocos2d-x -Qt -codeigniter">
+
+
+<title>برنامه نویسی Go همراه با مثال &gt; Hello World | سلیمان ربیعی</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">صفحه نخست</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">نوشته ها</a>
+                
+                    <a class="menu-item" href="/category">دسته ها</a>
+                
+                    <a class="menu-item" href="/tag">برچسب ها</a>
+                
+                    <a class="menu-item" href="/about">درباره</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">صفحه نخست</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; منو</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">نوشته ها</a>
+                
+                    <a class="menu-item" href="/category">دسته ها</a>
+                
+                    <a class="menu-item" href="/tag">برچسب ها</a>
+                
+                    <a class="menu-item" href="/about">درباره</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">برنامه نویسی Go همراه با مثال &gt; Hello World</h1>
+            
+                <div class="post-meta">
+                    
+                        نگارنده: <a itemprop="author" rel="author" href="/">سلیمان ربیعی</a>
+                    
+
+                    
+                        <span class="post-time">
+                        تاریخ: <a href="#">۲۵ بهمن ۱۳۹۹&nbsp;&nbsp;۲۳:۵۶:۰۳</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/">برنامه نویسی</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>برای شروع قصد داریم پروژه چاپ سلام دنیای معروف رو با  زبان برنامه نویسی Go پیاده سازی کنیم کنیم.<br>متن کامل برنامه را اینجا می تونید مشاهده کنید:</p>
+<figure class="highlight go"><figcaption><span>hello-world.go</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="string">"hello world"</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p>برای اجرای برنامه  کافیه که کد برنامه  رو داخل فایل hello-world.go ذخیره کنید و از طریق خط فرمان مطئمن شوید که در مسیر مورد نظر قرار دارید و سپس با استفاده از دستور زیر برنامه را اجرا می کنیم .</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ go run hello-world.go</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hello world</span></pre></td></tr></table></figure>
+<p>گاهی لازمه که به جای اجرای مستقیم برنامه یه خروجی باینری از برنامه داشته باشیم و بعد اقدام به اجرای برنامه کنیم .برای این کار می تونیم از دستور build به شکل زیر استفاده کنیم .</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ go build hello-world.go</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ ls</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">hello-world    hello-world.go</span></pre></td></tr></table></figure>
+<p>حالا می تونیم به صورت مستقیم برنامه رو اجرا کنیم .</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ./hello-world</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hello world</span></pre></td></tr></table></figure>
+<p>حالا که یاد گرفتیم یه برنامه پایه Go  رو ایجاد و اجرا کنیم بهتره بریم که سایر ویژگی های این زبان رو با هم یاد بگیریم.</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>برچسب(ها):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/golang/"># golang</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">بازگشت</a>
+                <span>· </span>
+                <a href="/">صفحه نخست</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2021/02/10/hello-world/">سلام دنیا</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© سلیمان ربیعی | قدرت گرفته از <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

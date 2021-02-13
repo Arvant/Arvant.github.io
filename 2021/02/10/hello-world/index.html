@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="سلیمان ربیعی">
+
+
+    <meta name="subtitle" content="یک توسعه دهنده">
+
+
+    <meta name="description" content="علاقه مند به برنامه نویسی و توسعه اپلیکیشن های وب،موبایل و بازی">
+
+
+    <meta name="keywords" content="-php -C++ -Java -python -cocos2d-x -Qt -codeigniter">
+
+
+<title>سلام دنیا | سلیمان ربیعی</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">صفحه نخست</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">نوشته ها</a>
+                
+                    <a class="menu-item" href="/category">دسته ها</a>
+                
+                    <a class="menu-item" href="/tag">برچسب ها</a>
+                
+                    <a class="menu-item" href="/about">درباره</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">صفحه نخست</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; منو</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">نوشته ها</a>
+                
+                    <a class="menu-item" href="/category">دسته ها</a>
+                
+                    <a class="menu-item" href="/tag">برچسب ها</a>
+                
+                    <a class="menu-item" href="/about">درباره</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">گسترش همه</a>
+        <a onclick="go_top()">بازگشت به بالا</a>
+        <a onclick="go_bottom()">برو به انتها</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "بستن همه"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "باز کردن همه"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">سلام دنیا</h1>
+            
+                <div class="post-meta">
+                    
+                        نگارنده: <a itemprop="author" rel="author" href="/">سلیمان ربیعی</a>
+                    
+
+                    
+                        <span class="post-time">
+                        تاریخ: <a href="#">۲۲ بهمن ۱۳۹۹&nbsp;&nbsp;۲۱:۰۶:۲۶</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>به <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> خوش آمدید.این اولین پست شماست.<a href="https://hexo.io/docs/" target="_blank" rel="noopener">مستندات</a> برای اطلاعات بیشتر. اگر برای شما مشکلی پیش آمد می توانید جواب را در  <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener"> بخش عیب یابی </a> یا صفحه من در  <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener"">گیت هاب </a> مشاهده کنید.</p>
+<h2 id="شروع-سریع"><a href="#شروع-سریع" class="headerlink" title="شروع سریع"></a>شروع سریع</h2><h3 id="ایجاد-یک-پست-جدید"><a href="#ایجاد-یک-پست-جدید" class="headerlink" title="ایجاد یک پست جدید"></a>ایجاد یک پست جدید</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+
+<p>اطلاعات بیشتر: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">نوشتن</a></p>
+<h3 id="اجرای-سرور"><a href="#اجرای-سرور" class="headerlink" title="اجرای سرور"></a>اجرای سرور</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+
+<p>اطلاعات بیشتر: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">سرور</a></p>
+<h3 id="ساخت-فایل-های-استاتیک"><a href="#ساخت-فایل-های-استاتیک" class="headerlink" title="ساخت فایل های استاتیک"></a>ساخت فایل های استاتیک</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
+
+<p>اطلاعات بیشتر: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">تولید</a></p>
+<h3 id="استقرار-در-سایت-خارجی"><a href="#استقرار-در-سایت-خارجی" class="headerlink" title="استقرار در سایت خارجی"></a>استقرار در سایت خارجی</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
+
+<p>اطلاعات بیشتر: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">توسعه</a></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>برچسب(ها):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">بازگشت</a>
+                <span>· </span>
+                <a href="/">صفحه نخست</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2021/02/13/go-hello-world/">برنامه نویسی Go همراه با مثال > Hello World</a>
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© سلیمان ربیعی | قدرت گرفته از <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
