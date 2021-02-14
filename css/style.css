@@ -655,7 +655,7 @@ header label {
 }
 .post-wrap .categories-card .card-item {
   font-size: 14px;
-  text-align: left;
+  text-align: right;
   width: 45%;
   display: flex;
   align-items: flex-start;

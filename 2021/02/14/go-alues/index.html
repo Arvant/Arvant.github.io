@@ -18,7 +18,7 @@
     <meta name="keywords" content="-php -C++ -Java -python -cocos2d-x -Qt -codeigniter">
 
 
-<title>برنامه نویسی Go همراه با مثال &gt; Hello World | سلیمان ربیعی</title>
+<title>برنامه نویسی Go همراه با مثال &gt; مقادیر | سلیمان ربیعی</title>
 
 
 
@@ -118,7 +118,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">برنامه نویسی Go همراه با مثال &gt; Hello World</h1>
+            <h1 class="post-title">برنامه نویسی Go همراه با مثال &gt; مقادیر</h1>
             
                 <div class="post-meta">
                     
@@ -127,7 +127,7 @@
 
                     
                         <span class="post-time">
-                        تاریخ: <a href="#">۲۵ بهمن ۱۳۹۹&nbsp;&nbsp;۲۳:۵۶:۰۳</a>
+                        تاریخ: <a href="#">۲۶ بهمن ۱۳۹۹&nbsp;&nbsp;۲۳:۱۱:۱۹</a>
                         </span>
                     
                     
@@ -143,16 +143,16 @@
         </header>
 
         <div class="post-content">
-            <p>برای شروع قصد داریم پروژه چاپ سلام دنیای معروف رو با  زبان برنامه نویسی Go پیاده سازی  کنیم.<br>متن کامل برنامه را اینجا می تونید مشاهده کنید:</p>
-<figure class="highlight go"><figcaption><span>hello-world.go</span><a href="https://play.golang.org/p/NeviD0awXjt" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="string">"hello world"</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-<p>برای اجرای برنامه  کافیه که کد برنامه  رو داخل فایل hello-world.go ذخیره کنید و از طریق خط فرمان مطئمن شوید که در مسیر مورد نظر قرار دارید و سپس با استفاده از دستور زیر برنامه را اجرا می کنیم .</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ go run hello-world.go</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hello world</span></pre></td></tr></table></figure>
-<p>گاهی لازمه که به جای اجرای مستقیم برنامه یه خروجی باینری از برنامه داشته باشیم و بعد اقدام به اجرای برنامه کنیم .برای این کار می تونیم از دستور build به شکل زیر استفاده کنیم .</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ go build hello-world.go</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ ls</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">hello-world    hello-world.go</span></pre></td></tr></table></figure>
-<p>حالا می تونیم به صورت مستقیم برنامه رو اجرا کنیم .</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ./hello-world</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hello world</span></pre></td></tr></table></figure>
-<p>حالا که یاد گرفتیم یه برنامه پایه Go  رو ایجاد و اجرا کنیم بهتره بریم که سایر ویژگی های این زبان رو با هم یاد بگیریم.</p>
+            <p>زبان برنامه نویسی Go از مقادیر مختلفی از جمله رشته ها، اعداد صحیح، اعداد اعشاری، نوعی جبری و … پشتیبانی می کند.<br>در اینجا مثال هایی از این نوع داده ها را مشاهده می کنید.</p>
+<figure class="highlight go"><figcaption><span>values</span><a href="http://play.golang.org/p/YnVS3LZr8pk" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="string">"go"</span> + <span class="string">"lang"</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="string">"1+1 ="</span>, <span class="number">1</span>+<span class="number">1</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="string">"7.0/3.0 ="</span>, <span class="number">7.0</span>/<span class="number">3.0</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="literal">true</span> &amp;&amp; <span class="literal">false</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(<span class="literal">true</span> || <span class="literal">false</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fmt.Println(!<span class="literal">true</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
+<p>رشته ها را می توان توسط عملگر + با هم الحاق کرد.</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line">fmt.Println(<span class="string">"go"</span> + <span class="string">"lang"</span>)</span></pre></td></tr></table></figure>
+
+<p>اعداد صحیح و اعشاری</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line">fmt.Println(<span class="string">"1+1 ="</span>, <span class="number">1</span>+<span class="number">1</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">fmt.Println(<span class="string">"7.0/3.0 ="</span>, <span class="number">7.0</span>/<span class="number">3.0</span>)</span></pre></td></tr></table></figure>
+<p>مقادیر منطقی و عملگرهایی که احتمالا از قبل با آن آشنا هستید.</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line">fmt.Println(<span class="literal">true</span> &amp;&amp; <span class="literal">false</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">fmt.Println(<span class="literal">true</span> || <span class="literal">false</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">fmt.Println(!<span class="literal">true</span>)</span></pre></td></tr></table></figure>
         </div>
 
         
@@ -175,10 +175,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2021/02/14/go-alues/">برنامه نویسی Go همراه با مثال > مقادیر</a>
             
-            
-            <a class="next" rel="next" href="/2021/02/10/hello-world/">سلام دنیا</a>
+            <a class="next" rel="next" href="/2021/02/13/go-hello-world/">برنامه نویسی Go همراه با مثال > Hello World</a>
             
         </section>
 
